@@ -28,7 +28,8 @@ class Solution {
     int numProvinces(vector<vector<int>> adj, int V)
     {
         vector<bool>visited(V+1,false);
-        
+        // The indexing as 0,1,2 or 1,2,3 does not matter
+      // Let the Graph start from any point or node, we just need to know how many times we need to apply BFS over components
         int counter = 0;
         
         for(int i=0; i<V; i++)
